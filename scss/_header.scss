@@ -1,0 +1,12 @@
+body{
+	> header{
+		padding:25px 0;
+		input.form-control{
+			height:45px;
+			font: 13px $font_main;
+			color: #CCCCCC;
+			margin-top: 7px;
+			border: 1px solid #DDDDDD;
+		}
+	}
+}
