@@ -1,2 +1,48 @@
-body>header{padding:25px 0}body>header input.form-control{height:45px;font:13px "Oxygen";color:#CCCCCC;margin-top:7px;border:1px solid #DDDDDD}
+body > header {
+  padding: 25px 0; }
+  body > header > .content {
+    margin-left: -15px;
+    margin-right: -15px; }
+    body > header > .content:before, body > header > .content:after {
+      content: " ";
+      display: table; }
+    body > header > .content:after {
+      clear: both; }
+    body > header > .content > .logo-container {
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 992px) {
+        body > header > .content > .logo-container {
+          float: left;
+          width: 25%; } }
+      body > header > .content > .logo-container > .logo-container__logo {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px; }
+        @media (min-width: 992px) {
+          body > header > .content > .logo-container > .logo-container__logo {
+            float: left;
+            width: 83.33333%; } }
+    body > header > .content > .search-container {
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 992px) {
+        body > header > .content > .search-container {
+          float: left;
+          width: 33.33333%; } }
+      @media (min-width: 992px) {
+        body > header > .content > .search-container {
+          margin-left: 41.66667%; } }
+  body > header input.form-control {
+    height: 45px;
+    font: 13px "Oxygen";
+    color: #CCCCCC;
+    margin-top: 7px;
+    border: 1px solid #DDDDDD; }
+
 /*# sourceMappingURL=style.css.map */
