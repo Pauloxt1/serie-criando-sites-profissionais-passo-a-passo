@@ -7,19 +7,55 @@ body{
 				@include make-md-column(3);
 				> .logo-container__logo{
 					@include make-md-column(10);
+					@include make-xs-column(8);
+					@include make-xs-column-offset(2);
 				}
 			}
 			> .search-container{
 				@include make-md-column(4);
 				@include make-md-column-offset(5);
+				input.search-container__input.form-control{
+					height:45px;
+					font: 13px $font_main;
+					color: #CCCCCC;
+					margin-top: 7px;
+					border: 1px solid #DDDDDD;
+				}
 			}
 		}
-		input.form-control{
-			height:45px;
-			font: 13px $font_main;
-			color: #CCCCCC;
-			margin-top: 7px;
-			border: 1px solid #DDDDDD;
+	}
+	> #navegacao {
+		background: #CA3034;
+		> .container{
+			> #navegacao__content{
+				@include make-md-column(12);
+				.navbar{
+					border-radius: 0;
+					box-shadow: none;
+					border: none;
+					background: #CA3034;
+					margin-bottom: 0;
+					.navbar-collapse {
+						border:none;
+						> ul.navbar-nav{
+							> li{
+								&.active {
+									> a{
+										background: #882022;
+									}
+								}
+								a{
+									color: #fff;
+									font: bold 15px $font_main;
+									&:hover{
+										background: #882022;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
