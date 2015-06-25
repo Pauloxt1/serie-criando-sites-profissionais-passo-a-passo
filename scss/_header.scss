@@ -2,7 +2,6 @@ body{
 	> header{
 		padding:25px 0;
 		> .content{
-			@include make-row;
 			> .logo-container{
 				@include make-xs-column(12);
 				@include make-sm-column(4);
@@ -10,7 +9,6 @@ body{
 
 				> .logo-container__logo{
 					width:80%;
-					margin-left: 20%;
 				}
 			}
 			> .search-container{
@@ -35,7 +33,7 @@ body{
 	> #navegacao {
 		background: #CA3034;
 		> .container{
-			> #navegacao__content{
+			#navegacao__content{
 				@include make-md-column(12);
 				.navbar{
 					border-radius: 0;
@@ -52,6 +50,7 @@ body{
 					}
 					.navbar-collapse {
 						border:none;
+						padding-left: 0;
 						> ul.navbar-nav{
 							> li{
 								&.active {
