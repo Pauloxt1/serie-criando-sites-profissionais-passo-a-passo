@@ -1,0 +1,49 @@
+#servicos{
+	> #servicos__itens{
+		> .servicos__item{
+			@include make-xs-column(12);
+			@include make-sm-column(6);
+			@include make-md-column(3);
+			
+			cursor: pointer;
+			min-height: 150px;
+			background-color: #ccc;
+			background-clip: content-box;
+			margin-bottom: 30px;
+			> a{
+				display: block;
+				height: 150px;
+				width: 100%;
+				text-align: center;
+				> span{
+					display: inline-block;
+					position: relative;
+					@extend .sprite_servicos;
+
+					&.config{
+						@include sprite-define(70px, 70px, -5px, -129px);
+						top: (150px-70px)/2;
+					}
+					&.camera{
+						@include sprite-define(70px, 52px, -5px, -5px);
+						top: (150px-52px)/2;
+					}
+					&.image{
+						@include sprite-define(70px, 66px, -5px, -289px);
+						top: (150px-66px)/2;
+					}
+					&.pc{
+						@include sprite-define(70px, 62px, -5px, -441px);
+						top: (150px-62px)/2;
+					}
+				}	
+			}
+			&:hover{
+				background-color: $heading_tarja_color;
+			}
+			&, &:hover{
+				transition: all 0.5s linear;
+			}
+		}
+	}
+}

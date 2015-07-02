@@ -1,0 +1,6 @@
+@mixin sprite-define($width, $height, $x, $y: 0) {
+	width: $width;
+	height: $height;
+	background-position-x: $x;
+	background-position-y: $y;
+}
