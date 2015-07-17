@@ -15,42 +15,55 @@
 				height: 150px;
 				width: 100%;
 				text-align: center;
-				> span{
+				position: relative;
+				> span.title{
+					color:#fff;
+					font: 26px $font_main;
+					position: absolute;
+					width: 100%;
+					text-align: center;
+					bottom: 24px;
+					display: none;
+				}
+				&:hover > span.title{
+					display: block;
+				}
+				> span.icon{
 					display: inline-block;
 					position: relative;
 					transition: top 0.5s linear;
 					@extend .sprite_servicos;
 
-					&.config{
+					&.icon--config{
 						@include sprite-define(70px, 70px, -5px, -129px);
 						top: (150px-70px)/2;
 					}
-					&.camera{
+					&.icon--camera{
 						@include sprite-define(70px, 52px, -5px, -5px);
 						top: (150px-52px)/2;
 					}
-					&.image{
+					&.icon--image{
 						@include sprite-define(70px, 66px, -5px, -289px);
 						top: (150px-66px)/2;
 					}
-					&.pc{
+					&.icon--pc{
 						@include sprite-define(70px, 62px, -5px, -441px);
 						top: (150px-62px)/2;
 					}
 				}	
-				&:hover > span{
+				&:hover > span.icon{
 					top: 20px !important;
 					transition: top 0.5s linear;
-					&.config{
+					&.icon--config{
 						@include sprite-define(70px, 70px, -5px, -208px);
 					}
-					&.camera{
+					&.icon--camera{
 						@include sprite-define(70px, 52px, -5px, -67px);
 					}
-					&.image{
+					&.icon--image{
 						@include sprite-define(70px, 66px, -5px, -366px);
 					}
-					&.pc{
+					&.icon--pc{
 						@include sprite-define(70px, 62px, -5px, -513px);
 					}
 				}
