@@ -18,6 +18,7 @@
 				> span{
 					display: inline-block;
 					position: relative;
+					transition: top 0.5s linear;
 					@extend .sprite_servicos;
 
 					&.config{
@@ -37,6 +38,22 @@
 						top: (150px-62px)/2;
 					}
 				}	
+				&:hover > span{
+					top: 20px !important;
+					transition: top 0.5s linear;
+					&.config{
+						@include sprite-define(70px, 70px, -5px, -208px);
+					}
+					&.camera{
+						@include sprite-define(70px, 52px, -5px, -67px);
+					}
+					&.image{
+						@include sprite-define(70px, 66px, -5px, -366px);
+					}
+					&.pc{
+						@include sprite-define(70px, 62px, -5px, -513px);
+					}
+				}
 			}
 			&:hover{
 				background-color: $heading_tarja_color;
