@@ -1,0 +1,48 @@
+#produtos {
+	> #produtos__itens{
+		> .produtos__item{
+			@include make-xs-column(12);
+			@include make-sm-column(6);
+			@include make-md-column(3);
+			background-color: #C72327;
+			background-clip: content-box;
+			margin-bottom: 30px;
+			> img{
+				box-shadow: 0px 18px 18px rgba(0, 0, 0, 0.2);
+			}
+			> h2{
+				font: bold 20px $font_main;
+				text-align: center;
+				margin: 20px 0 10px;
+				padding: 0;
+				color: #fff;
+			}
+			> p{
+				margin: 0 0 10px;
+				text-align: center;
+				color: #ddd;
+				font: 300 13px $font_main;
+			}
+			> a.read-more{
+				margin-bottom: 15px;
+				background: #fff;
+				color:#C72327;
+				font: bold 13px $font_main;
+				padding: 5px 0;
+				text-align: center;
+				display: block;
+				width: 78px;
+				float: right;
+				margin-right: 15px;
+				border: 2px solid #fff;
+				transition: all 0.2s linear;
+				&:hover{
+					background: #C72327;
+					color: #fff;
+					text-decoration: none;
+					transition: all 0.2s linear;
+				}
+			}
+		}
+	}
+}
