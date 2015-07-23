@@ -10,9 +10,11 @@ a{
 }
 
 .container{
-	.heading{
+	.heading,
+	.widget{
 		@include make-md-column(12);
-		> h2{
+		> h2,
+		> h3{
 			margin: 0 0 30px;
 			font: bold 18px $font_main;
 			color: $heading_color;

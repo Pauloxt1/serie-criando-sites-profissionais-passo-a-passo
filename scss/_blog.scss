@@ -1,0 +1,52 @@
+#blog{
+	#posts{
+		@include make-xs-column(12);
+		@include make-sm-column(7);
+		@include make-md-column(9);
+		> .posts__item{
+			margin-bottom: 30px;
+			> h2 {
+				font: 300 26px $font_main;
+				color: #CC1F22;
+				margin: 15px 0 5px;
+			}
+			> p {
+				font: 300 16px $font_main;
+				color: #878787;
+				line-height: 1.5;
+				margin-bottom: 15px;
+			}
+			> a.read-more {
+				display: block;
+				float: right;
+				width: 140px;
+				padding: 10px 0;
+				background-color: #CD1F23;
+				text-align: center;
+				font: 300 14px $font_main;
+				color: #fff;
+			}
+		}
+	}
+	#sidebar{
+		@include make-xs-column(12);
+		@include make-sm-column(5);
+		@include make-md-column(3);
+		> .widget{
+			> h3.widget__title{
+				font-size: 16px;
+				text-indent: 9px;
+				margin-bottom: 13px;
+				> span{
+					width: 4px;
+				}
+			}
+			> .widget__body{
+				width: 100%;
+				min-height: 220px;
+				background-color: #636363;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
