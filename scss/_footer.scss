@@ -8,8 +8,22 @@ body{
 				@include make-sm-column(4);
 				@include make-md-column(4);
 				> h4.widget__title{
-					> span{
+					position: relative;
+					margin: 12px 0;
+					height: 36px;
+					font: 22px $font_main;
+					color: #fff;
+					text-indent: 12px;
+					padding-top: 3px;
 
+					> span{
+						display: block;
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 4px;
+						height: 36px;
+						background: #C72327;
 					}
 				}
 				p{
