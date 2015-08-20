@@ -30,7 +30,19 @@ body{
 					color: #777;
 					font: bold 11px $font_main;
 				}
-
+				> ul#fotos{
+					list-style: none;
+					padding: 0;
+					> li{
+						float: left;
+						display: inline;
+						width: 30%;
+						margin: 0 5% 5% 0;
+						&:nth-child(3n){
+							margin-right: 0;
+						}
+					}
+				}
 				&.footer-widget--about{
 					a{
 						display: block;
