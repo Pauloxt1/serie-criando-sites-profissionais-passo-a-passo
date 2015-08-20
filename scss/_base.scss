@@ -11,25 +11,29 @@ a{
 
 .container{
 	.heading,
-	.widget{
+	.widget > .widget__title{
+		margin: 0 0 30px;
+		font: bold 18px $font_main;
+		color: $heading_color;
+		position: relative;
+		line-height: 30px;
+		text-indent: 14px;
+		> span{
+			display: inline-block;
+			width: 8px;
+			height: 30px;
+			background: $heading_tarja_color;
+			position: absolute;
+			top: 0;
+			left: 15px;
+		}
+	}
+	.heading{
 		@include make-md-column(12);
-		> h2,
-		> h3{
-			margin: 0 0 30px;
-			font: bold 18px $font_main;
-			color: $heading_color;
-			position: relative;
-			line-height: 30px;
-			text-indent: 14px;
-			> span{
-				display: inline-block;
-				width: 8px;
-				height: 30px;
-				background: $heading_tarja_color;
-				position: absolute;
-				top: 0;
-				left: 0;
-			}
+	}
+	.widget > .widget__title{
+		> span{
+			left: 0;
 		}
 	}
 }
