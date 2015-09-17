@@ -1,7 +1,10 @@
 body{
 	> footer{
 		background: #333;
-		padding: 20px 0 95px;
+		padding: 20px 0 0;
+		> .container{
+			padding-bottom: 95px;
+		}
 		#footer-sidebar{
 			> .footer-widget{
 				@include make-xs-column(12);
@@ -51,6 +54,62 @@ body{
 					p{
 						width: 75%;
 						margin: 20px 0 0;
+					}
+				}
+			}
+		}
+		> #redes-sociais{
+			background: #555;
+			padding: 10px 0;
+			
+			#redes-sociais__container{
+				@include make-md-column(12);
+
+				> ul#redes-sociais__icons{
+					float: right;
+
+					> li{
+						display: inline;
+						float: left;
+						margin-right: 5px;
+
+						> a.icon{
+							display: block;
+							@extend .sprite_redes_sociais;
+
+							&,
+							&:hover{
+								transition: all 0.2s linear;
+							}
+
+							&.icon--facebook{
+								@include sprite-define(30px, 30px, -5px, -131px);
+								&:hover{
+									background-position-y:-89px;						
+								}
+							}
+							&.icon--twitter{
+								@include sprite-define(30px, 30px, -5px, -551px);
+								&:hover{
+									background-position-y:-508px;
+								}
+							}
+							&.icon--youtube{
+								@include sprite-define(30px, 30px, -6px, -719px);
+								&:hover{
+									background-position-y:-677px;
+								}
+							}
+							&.icon--gplus{
+								@include sprite-define(30px, 30px, -5px, -299px);
+								&:hover{
+									background-position-y:-257px;
+								}
+							}
+						}
+					}
+					> :last-child{
+						margin-right: 0;
 					}
 				}
 			}
