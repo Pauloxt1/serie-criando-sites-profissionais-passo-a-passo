@@ -32,6 +32,7 @@ body{
 	}
 	> #navegacao {
 		background: #CA3034;
+		width: 100%;
 		> .container{
 			#navegacao__content{
 				@include make-md-column(12);
