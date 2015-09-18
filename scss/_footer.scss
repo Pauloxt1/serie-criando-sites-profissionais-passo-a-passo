@@ -85,25 +85,25 @@ body{
 							&.icon--facebook{
 								@include sprite-define(30px, 30px, -5px, -131px);
 								&:hover{
-									background-position-y:-89px;						
+									background-position:-5px -89px;						
 								}
 							}
 							&.icon--twitter{
 								@include sprite-define(30px, 30px, -5px, -551px);
 								&:hover{
-									background-position-y:-508px;
+									background-position:-5px -508px;
 								}
 							}
 							&.icon--youtube{
 								@include sprite-define(30px, 30px, -6px, -719px);
 								&:hover{
-									background-position-y:-677px;
+									background-position:-5px -677px;
 								}
 							}
 							&.icon--gplus{
 								@include sprite-define(30px, 30px, -5px, -299px);
 								&:hover{
-									background-position-y:-257px;
+									background-position:-5px -257px;
 								}
 							}
 						}
