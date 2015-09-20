@@ -4,12 +4,14 @@ $("#slider").owlCarousel({
       singleItem:true
 });
 $("ul.navbar-nav > li > a").on('click', function(event){
+	var position = $(this.hash).offset();
+	var heightMenu = ($(window).scrollTop() < 200) ? 100 : 50;
 	event.preventDefault();
 
-	$('ul.navbar-nav li').removeClass('active');
+	$('ul.navbar-nav > li').removeClass('active');
 	$(this).parent().addClass('active');
 	
-	$("html, body").animate({scrollTop:$(this.hash).offset().top-50}, 1200);
+	$("html, body").animate({scrollTop:position.top-heightMenu}, 1200);
 });
 
 
