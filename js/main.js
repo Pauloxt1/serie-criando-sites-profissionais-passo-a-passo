@@ -9,7 +9,10 @@ linksNavBar.click(function(event){
 	   $('ul.navbar-nav > li').removeClass('active');
 	   $(this).parent().addClass('active');
 	} else {
-		$("html, body").animate({scrollTop:position.top-heightMenu}, 1200);
+		var linkHref = $(this).attr('href');
+		$("html, body").animate({scrollTop:position.top-heightMenu}, 1200, function(){
+			document.location.hash = linkHref;
+		});
 	}
 });
 
@@ -24,7 +27,7 @@ $(window).scroll(function(){
 
 	CheckActive();
 
-	if (scrollTopAtual-250 >= 200) {
+	if (scrollTopAtual >= 200) {
 		navegacao.addClass('navegacao-fixa');
 	}
 	else {
