@@ -24,7 +24,7 @@ $(window).scroll(function(){
 
 	CheckActive();
 
-	if (scrollTopAtual-250 >= 200) {
+	if (scrollTopAtual > 200) {
 		navegacao.addClass('navegacao-fixa');
 	}
 	else {
